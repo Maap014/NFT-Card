@@ -1,0 +1,153 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+#wrapper{
+    width: 300px;
+    height: 550px;
+    margin: 85px auto;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%) ;
+    padding: 20px;
+}
+.img-container{
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-container::after{
+    border-radius: 10px;
+}
+.img-container::after, .eye-container{
+    opacity: 0;
+}
+.img-container:hover::after, .eye-container:hover{
+    background-color:hsla(178, 100%, 50%, 0.223);
+    content: '';
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+}
+.img-container:hover{
+    transform: scale(0.9);
+    transition: .3s ease;
+}
+
+.eye-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+}
+
+.p-1{
+    color: hsl(0, 0%, 100%);
+    font-family:'Outfit';
+    font-weight: 600px;
+    font-size: 20px;
+}
+.p-2{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-family:'Outfit';
+}
+.left{
+    display:flex;
+}
+.eth-t{
+    display: flex;
+    width: 118px;
+    height: 27px;
+    background-color: hsl(216deg 58% 24% / 55%);
+    border-radius: 15px;
+    border: solid;
+    border-color: hsl(216deg 58% 24%);
+}
+
+.eth{
+     width: 20px;
+     height: 25px;
+   cursor: pointer;
+   margin-left: 5px;
+}
+.eth-worth{
+    color: hsl(178, 100%, 50%);
+    font-size:18px;
+     margin: 2px 0 0 5px;
+     font-family:'Outfit'; 
+   cursor: pointer;
+}
+.clock{
+    margin-left: 60px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.p-3{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin: 0 0 0 4px;
+    font-family:'Outfit';
+    cursor: pointer;
+}
+.footer-div{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid hsl(215, 51%, 70%)
+    
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-style:solid;
+    border-radius: 30px;
+    border-color: #fff;
+    border-width: 1.5px;
+    margin: 10px 4px 0 0;
+}
+.p-4{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-family:'Outfit';
+    margin:15px 4px 0 12px;
+    
+}
+.p-5{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-family:'Outfit';
+    margin: 15px 4px 0 2px;
+}
+/* this is hover */
+
+.eye-container:hover {
+   cursor: pointer;
+   opacity: 0.8;
+}
+
+.p-1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.p-5:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.eth-t:hover{
+    transform: scale(0.9);
+ transition: .4s ease;
+
+}
